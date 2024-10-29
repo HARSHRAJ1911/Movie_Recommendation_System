@@ -9,7 +9,7 @@ def fetch_poster(movie_id):
     try:
         # Replace with your valid API key
         response = requests.get(
-            f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=0c0b7dd774cfacd8463415194c360f36")
+            f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=YOUR_API_KEY")
         data = response.json()
 
         if 'poster_path' in data and data['poster_path'] is not None:
